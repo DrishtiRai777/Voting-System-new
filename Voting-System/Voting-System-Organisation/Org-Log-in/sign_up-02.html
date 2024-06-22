@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin_Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sign_up-02.css">
+</head>
+<body>
+    <!-- Administrator Details -->
+    <div class="regist_form">
+        <div class="Admin-info-heading">
+            <p>Administrator Information</p>
+        </div>
+
+        <div>
+            <form action="">
+
+                <div class="details">
+                    <div>
+                        <!-- Admin Name -->
+                        <label for="adminName">Administrator Name: </label>
+                        <input type="text" name="adminName" id="adminName" required> 
+                        <b><span class="formerror"> </span></b>
+                    </div>
+                    <div>
+                        <!-- DOB -->
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" name="dob" id="dob" required> 
+                        <b><span class="formerror"> </span></b>
+                    </div>
+                    <div>
+                        <!-- Gender -->
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                            <option value="Choose not to disclose">Choose not to disclose</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="details">
+                    <div>
+                        <!-- College Name -->
+                        <label for="clgName">Institution Name: </label>
+                        <input type="text" name="clgName" id="clgName" required> 
+                        <b><span class="formerror"> </span></b>
+                    </div>
+                    <div>
+                        <!-- Branch -->
+                        <label for="branch">Branch</label>
+                        <input type="text" name="branch" id="branch" required> 
+                        <b><span class="formerror"> </span></b>
+                    </div>
+                    <div>
+                        <!-- CollegeId -->
+                        <label for="clgId">College ID</label>
+                        <input type="text" name="clgId" id="clgId" required> 
+                        <b><span class="formerror"> </span></b>
+                    </div>
+                </div>
+
+                <div class="details">
+                    <div>
+                        <!-- Phone Number -->
+                        <label for="phNum">Phone Number: </label>
+                        <input type="text" name="phNum" id="phNum" required> 
+                        <b><span class="formerror"> </span></b>
+                    </div>
+                    <div>
+                        <!-- Email -->
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" required> 
+                        <b><span class="formerror"> </span></b>
+                    </div>
+                    <div>
+                        <label for="position">Position or Title:</label>
+                        <select id="position" name="position" required>
+                            <option value="">Select</option>
+                            <option value="President">President</option>
+                            <option value="Vice President">Vice President</option>
+                            <option value="Secretary">Secretary</option>
+                            <option value="Treasurer">Treasurer</option>
+                            <option value="Chairperson">Chairperson</option>
+                            <option value="Faculty Advisor">Faculty Advisor</option>
+                            <option value="Department Head">Department Head</option>
+                            <option value="Dean">Dean</option>
+                            <option value="Director">Director</option>
+                            <option value="Coordinator">Coordinator</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Team Info -->
+                <div class="team-info-title">
+                    <p>Team Information</p>
+                </div>
+
+                <!-- Secretory details -->
+                <div>
+                    <p class="detail-heading">Secretory Details</p>
+                </div>
+
+                <div class="details">
+                    <div>
+                        <!-- Secretory Name -->
+                        <label for="secName">Secretory Name: </label>
+                        <input type="text" name="secName" id="secName" required> 
+                        <b><span class="formerror"> </span></b>
+                    </div>
+                    <div>
+                        <!-- Secretory Phone Number -->
+                        <label for="phoneNum">Phone Number</label>
+                        <input type="text" name="phoneNum" id="phoneNum" required> 
+                        <b><span class="formerror"> </span></b>
+                    </div>
+                    <div>
+                        <!-- Secretory Email -->
+                        <label for="secEmail">Email</label>
+                        <input type="email" name="secEmail" id="secEmail" required> 
+                        <b><span class="formerror"> </span></b>
+                    </div>
+                </div>
+
+                <!-- Team Member Details -->
+
+                <div>
+                    <p class="detail-heading">Team Member Details</p>
+                </div>
+                
+                <div class="details">
+                    <div>
+                        <!-- Team Member Name -->
+                        <label for="tmName">Team Member Name: </label>
+                        <input type="text" name="tmName" id="tmName" required> 
+                        <b><span class="formerror"> </span></b>
+                    </div>
+                    <div>
+                        <!-- Team Member Phone Number -->
+                        <label for="tmPhoneNum">Phone Number</label>
+                        <input type="text" name="tmPhoneNum" id="tmPhoneNum" required> 
+                        <b><span class="formerror"> </span></b>
+                    </div>
+                    <div>
+                        <!-- Team Member Email -->
+                        <label for="tmEmail">Email</label>
+                        <input type="email" name="tmEmail" id="tmEmail" required> 
+                        <b><span class="formerror"> </span></b>
+                    </div>
+                </div>
+
+                <div class="details">
+                    <div>
+                        <!-- Team Member Name -->
+                        <label for="tmName">Team Member Name: </label>
+                        <input type="text" name="tmName" id="tmName" required> 
+                        <b><span class="formerror"> </span></b>
+                    </div>
+                    <div>
+                        <!-- Team Member Phone Number -->
+                        <label for="tmPhoneNum">Phone Number</label>
+                        <input type="text" name="tmPhoneNum" id="tmPhoneNum" required> 
+                        <b><span class="formerror"> </span></b>
+                    </div>
+                    <div>
+                        <!-- Team Member Email -->
+                        <label for="tmEmail">Email</label>
+                        <input type="email" name="tmEmail" id="tmEmail" required> 
+                        <b><span class="formerror"> </span></b>
+                    </div>
+                </div>
+
+                <div class="details">
+                    <div>
+                        <!-- Team Member Name -->
+                        <label for="tmName">Team Member Name: </label>
+                        <input type="text" name="tmName" id="tmName" required> 
+                        <b><span class="formerror"> </span></b>
+                    </div>
+                    <div>
+                        <!-- Team Member Phone Number -->
+                        <label for="tmPhoneNum">Phone Number</label>
+                        <input type="text" name="tmPhoneNum" id="tmPhoneNum" required> 
+                        <b><span class="formerror"> </span></b>
+                    </div>
+                    <div>
+                        <!-- Team Member Email -->
+                        <label for="tmEmail">Email</label>
+                        <input type="email" name="tmEmail" id="tmEmail" required> 
+                        <b><span class="formerror"> </span></b>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="button" id="prevButton">Prev</button>
+                    <button type="submit" id="nextButton">Next</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('prevButton').addEventListener('click', function() {
+            window.location.href = 'sign_up-01.html';
+        });
+
+        document.getElementById('nextButton').addEventListener('click', function() {
+            window.location.href = 'sign_up-03.html';
+        });
+    </script>
+</body>
+</html>

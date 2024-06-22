@@ -1,0 +1,308 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eeeded;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eeeded;;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar nav a {
+    margin-right: 15px;
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #007bff;
+}
+
+.navbar .dark-mode {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navbar .dark-mode:hover {
+    background-color: #007bff;
+}
+
+.hero {
+    color: #000000;
+    text-align: center;
+    padding: 50px 0;
+    /* background: linear-gradient(1deg,#ffffff, #00d5ff); */
+    box-shadow: 0px 1px 3px 0px rgb(176, 180, 180);
+    background-size: cover;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.hero h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-buttons {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-buttons button {
+    margin: 10px;
+    padding: 15px 30px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero-buttons button:hover {
+    background-color: #45c1ff;
+    transform: scale(1.05);
+}
+
+section {
+    color: #000000;
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: #eeeded;
+    border-radius: 15px;
+    box-shadow: 0px 1px 3px 0px rgb(176, 180, 180);
+    /* box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.2); */
+}
+
+.elections-slider, .cool-stats, .recent-activity {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.election-card, .activity-card {
+    color: #000000;
+    background-color: #ffffff;
+    padding: 20px;
+    width: 25%;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 4px rgb(141, 141, 142);
+    transition: transform 0.3s;
+}
+
+.election-card:hover, .activity-card:hover {
+    transform: translateY(-7px);
+}
+
+.know-more, .edit {
+    padding: 15px 30px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.know-more:hover, .edit:hover {
+    background-color: #45c1ff;
+    transform: scale(1.05);
+}
+.cool-stats .stat {
+    color: #fdfeff;
+    background-color: #007bff;
+    /* background: linear-gradient(1deg,#ffffff, #00d5ff); */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 3px 4px rgb(188, 188, 192);
+    width: 20%;
+}
+
+.communication-tools {
+    box-shadow: 0px 1px 3px 0px rgb(176, 180, 180);
+    text-align: center;
+}
+
+.communication-tools button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.communication-tools button:hover {
+    background-color: #45c1ff;
+    transform: scale(1.05);
+}
+
+.support-div {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.support form input, .support form button {
+    /* background-color: pink; */
+    display: inline-block;
+    margin: 10px 0;
+    padding: 15px;
+    width: 40%;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+.instant-support button{
+    margin-left: 55px;
+    background-color: #007bff;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.instant-support {
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px 1px #c6c5c5;
+    margin-right: 10px;
+    padding: 50px;
+}
+
+
+.instant-support button:hover {
+    background-color: #45c1ff;
+    transform: scale(1.05);
+}
+
+.support form button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.support form button:hover {
+    background-color: #45c1ff;
+    transform: scale(1.05);
+}
+
+.feedback {
+    text-align: center;
+}
+
+.feedback button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.feedback button:hover {
+    background-color: #45c1ff;
+    transform: scale(1.05);
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1a1a1a;
+}
+
+.footer .social-media a {
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .social-media a:hover {
+    color: #45c1ff;
+}
+
+.footer p {
+    margin: 10px 0 0 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.faq {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+details {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #e9e9e9;
+    padding: 10px;
+}
+
+summary {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    margin: -10px -10px 10px -10px;
+    transition: background-color 0.3s ease;
+}
+
+summary:hover {
+    background-color: #45c1ff;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./logIn.css">
+</head>
+<body>
+    <div class="logIn-form">
+        <div class="logIn-heading">
+            <p>LogIn</p>
+        </div>
+
+        <div>
+            <form action="">
+                <!-- Email -->
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <!-- Password -->
+                <div>
+                    <label for="pswd">Password</label>
+                    <input type="password" name="pswd" id="pswd">
+                </div>
+                
+                <div class="details">
+                    <div>
+                        <label for="agree-checkbox">
+                            <input type="checkbox" id="agree-checkbox" required>
+                            Remember Me
+                        </label>
+                    </div>
+
+                    <div>
+                        <a href="">Forgot Password ?</a>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+
+            </form>
+            <div class="new-user">
+                <p>New User ?</p>
+                <a href="">Register</a>
+            </div>
+        </div>
+</body>
+</html>
