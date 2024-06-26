@@ -81,8 +81,14 @@ button{
     border-radius:40px;
     cursor:pointer;
     font-size:1em;
-    background-color: blue;
+    background-color: black;
     font-weight:500;
+}
+.mybut{
+    font-weight: bold;;
+}
+.mybut:hover{
+    background-color: darkgrey;
 }
 @media(max-width:360px){
     .container{

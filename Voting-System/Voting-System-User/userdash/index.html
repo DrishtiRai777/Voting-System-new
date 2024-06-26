@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Interface</title>
     <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/23b01e1569.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
             <ul class="nav-links">
-                <li class="l1"><a href="">Home</a></li>
-                <li class="l1"><a href="">Analytics</a></li>
-                <li class="l1"><a href="">Manage Voters</a></li>
-                <li class="l1"><a href="">Communication Tools</a></li>
-                <li class="l1"><a href="">Help</a></li>
+                <li><a class="active" href="">Home</a></li>
+                <li><a href="">Analytics</a></li>
+                <li><a href="">Manage Voters</a></li>
+                <li><a href="">Communication Tools</a></li>
+                <li><a href="">Help</a></li>
             </ul><br>
-            <img class="im" src="./pictures/i1.jpeg" alt="">
-            <p class="u">USER</p>
+            <img class="i1" src="./pictures/i1.jpeg" alt="">
+            <p class="u">User</p>
     </nav><br>
     <section class="hello">
         <div id="el">
@@ -36,20 +41,18 @@
             <p class="r8">"A BALLOT IS STRONGER THAN A BULLET"</p>
             <p class="r9">Abrahim Lincoln</p>
         </div>    
-    </section>
-    <section class="h">
-        <div class="sec">
-            <div class="box">
+    </section><br><br>
+    <section>
+        <div class="card-container">
+            <div class="cards">
                 <img src="./pictures/My first design 4.png" alt="">
             </div>
-            <div class="box">
+            <div class="cards">
                 <img src="./pictures/My first design 5.png" alt="">
             </div>
-            <div class="box">
+            <div class="cards">
                 <img src="./pictures/My first design 7.png" alt="">
             </div>
-        </div>
-    </section>
     </section>
     <section>
         <h1 class="can">Candidate's Information</h1>
@@ -125,7 +128,6 @@
                 </div>
         </div>
     </section>
-    
 </body>
 
 </html>
