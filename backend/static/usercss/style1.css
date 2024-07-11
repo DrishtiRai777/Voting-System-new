@@ -1,0 +1,23 @@
+.heading{
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+    text-decoration: underline;
+}
+.para{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.let{
+    float:right;
+}
+.v{
+    background-color: #333;
+    text-decoration: none;
+    color:#fff;
+    padding:12px 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.v:hover{
+    background-color: green;
+}

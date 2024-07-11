@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ephesis&family=Oswald&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Maps&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.head{
+    text-align: left;
+    color: black;
+    font-size:26px;
+    padding-bottom: 8px;
+    border-bottom:1px solid silver;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;  
+    font-family: "Poppins", sans-serif; 
+    height:110vh;  
+}
+.container{
+    max-width: 650px;
+    margin:0 28px;
+    padding: 28px;
+    box-shadow: 0 15px 20px #ABB289;  
+}
+.content{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding:20px 0;
+}
+.card-box{
+    display:flex;
+    flex-wrap:wrap;
+    width:50%;
+    padding-bottom: 15px;
+}
+.card-box :nth-child(2n){
+    justify-content: end;
+}
+.card-box label,.circle-title{
+    width:95%;
+    color:#2f4f4f;
+    font-weight: bold;
+    margin:5px 0px;
+}
+.circle-title{
+    font-size: 16px;
+}
+.card-box input{
+    height:40px;
+    width:95%;
+    padding:0 10px;
+    border-radius: 5px;
+    border:1px solid #ccc;
+    outline:none;
+}
+.card-box input:is(:focus,:valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+.gender-category label{
+    padding:0 20px 0 5px;
+    font-size: 14px;
+}
+.button-container{
+    margin:15px 0;
+}
+.button-container button{
+    width:100%;
+    margin-top:10px;
+    padding:10px;
+    display:block;
+    font-size:20px;
+    color:#fff;
+    border:none;
+    border-radius:5px ;
+   background-color: black;
+}
+
+.button-container button:hover{
+    background-color: darkgray;
+}
+@media(max-width:360px){
+    .container{
+    min-width: 280px;
+    }
+    .content{
+        max-height:380px;
+        overflow:hidden;
+    }
+    .card-box{
+        margin-bottom: 12px;
+        width:100%;
+    }
+    .card-box:nth-child(2n){
+        justify-content: space-between;
+    }
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+    }
+}
