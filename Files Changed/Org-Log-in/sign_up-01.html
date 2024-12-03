@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sign_up-01.css">
+</head>
+<body>
+    <!-- Organization Details -->
+    <header>
+        <div>
+            <p>Registration Form</p>
+        </div>
+    </header>
+
+    <div class="regist_form">
+        <div class="org-info-heading">
+            <p>Organization Information</p>
+        </div>
+
+        <div>
+            <form name="myForm" onsubmit="return validateForm()" method="post">
+                <div class="details">
+                    <div class="formdesign" id="orgNameError">
+                        <!-- Organization Name -->
+                        <label for="orgName">Organization Name: </label>
+                        <input type="text" name="orgName" id="orgName" required> 
+                        <b><span class="formerror"></span></b>
+                    </div>
+    
+                    <div>
+                        <!-- Organization Type -->
+                        <label for="organizationType">Organization Type:</label>
+                        <select id="organizationType" name="organizationType">
+                            <option value="StudentClub">Student Club</option>
+                            <option value="AcademicDepartment">Academic Department</option>
+                            <option value="AdministrativeOffice">Administrative Office</option>
+                            <option value="FacultySenate">Faculty Senate</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="details">
+                    <div class="formdesign" id="orgAddressError">
+                        <!-- Organization Address -->
+                        <label for="orgAddress">Organization Address: </label>
+                        <input type="text" name="orgAddress" id="orgAddress" required>
+                        <b><span class="formerror"></span></b>
+                    </div>
+    
+                    <div class="formdesign" id="orgContactPersonError">
+                        <!-- Organization Contact Person -->
+                        <label for="orgContactPerson">Organization Contact Person: </label>
+                        <input type="text" name="orgContactPerson" id="orgContactPerson" required>
+                        <b><span class="formerror"></span></b>
+                    </div>
+                </div>
+
+                <div class="details">
+                    <div class="formdesign org-email" id="orgEmailError">
+                        <!-- Organization Email -->
+                        <label for="orgEmail">Organization Email: </label>
+                        <input type="email" name="orgEmail" id="orgEmail" required>
+                        <b><span class="formerror"></span></b>
+                    </div>
+                    <div>
+                        <!-- Organization Logo -->
+                        <label for="organizationLogo">Organization Logo:</label>
+                        <input type="file" id="organizationLogo" name="organizationLogo" accept="image/*">
+                    </div>
+                </div>
+
+                <div>
+                    <!-- Social Media Handle -->
+                    <label for="linkedin">LinkedIn:</label>
+                    <input type="text" id="linkedin" name="linkedin" placeholder="LinkedIn URL">
+                </div>
+                <br>
+                <button type="button" id="nextButton">Next</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./sign_up-01.js"></script>
+</body>
+</html>

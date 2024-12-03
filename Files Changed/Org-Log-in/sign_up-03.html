@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin_Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sign_up-03.css">
+</head>
+<body>
+    <!-- Administrator Details -->
+    <div class="regist_form">
+        <div class="Admin-info-heading">
+            <p>Security and Authentication</p>
+        </div>
+
+        <div>
+            <form id="myForm" onsubmit="return validateForm()" method="post">
+                
+                <div class="details">
+                    <div>
+                        <!-- User Name -->
+                        <label for="user">User Name: </label>
+                        <input type="text" name="user" id="user" required> 
+                        <b><span class="formerror" id="userError"></span></b>
+                    </div>
+                    <div>
+                        <!-- Password -->
+                        <label for="pswd">Password</label>
+                        <input type="password" name="pswd" id="pswd" required> 
+                        <b><span class="formerror" id="pswdError"></span></b>
+                    </div>
+                    <div>
+                        <!-- Confirm Password -->
+                        <label for="c-pswd">Confirm Password</label>
+                        <input type="password" name="c-pswd" id="c-pswd" required> 
+                        <b><span class="formerror" id="cPswdError"></span></b>
+                    </div>
+                </div>
+
+                <div class="security-title">
+                    <p>Consent and Agreement</p>
+                </div>
+                <div>
+                    <p>Organizational users registering with the College Voting System must acknowledge and adhere to the Terms of Service and Privacy Policy. This entails understanding and abiding by the regulations outlined in these documents. Please review and agree to proceed.</p>
+                </div>
+
+                <div class="checkboxes">
+                    <h3>Consent for Data Collection</h3>
+                    <p>By registering with the College Voting System, organizations agree to the collection and processing of personal data for voting purposes, including organization name, contact details, and voting preferences.</p>
+                    <label for="agree-checkbox">
+                      <input type="checkbox" id="agree-checkbox" required>
+                      I have read and agree to the Consent for Data Collection
+                    </label>
+                </div>
+
+                <div class="checkboxes">
+                    <h3>Appointed Auditors</h3>
+                    <p>Appointed auditors will ensure fairness, transparency, and integrity in the voting process. Their role is vital for maintaining credibility and impartiality. Rest assured, they will diligently uphold these standards to preserve the integrity of the College Voting System.</p>
+                    <label for="agree-checkbox">
+                        <input type="checkbox" id="agreeAuditors" required>
+                        I have read and agree to the Appointed Auditors
+                    </label>
+                </div>
+
+                <div class="checkboxes">
+                    <h3>Code of Conduct</h3>
+                    <p>Organizations registering must adhere to a code of conduct, committing to fair, transparent, and respectful behavior. This prohibits voter manipulation, coercion, or intimidation.</p>
+                    <label for="agree-checkbox">
+                      <input type="checkbox" id="agreeCode" required>
+                      I have read and agree to the Code of Conduct
+                    </label>
+                </div>
+
+                <div>
+                    <button class="btn" id="prevButton" type="button">Prev</button>
+                    <button class="submit" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./sign_up-03.js"></script>
+</body>
+</html>

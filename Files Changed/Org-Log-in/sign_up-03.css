@@ -1,0 +1,115 @@
+body {
+    font-family: Poppins, Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #eeeded;
+}
+
+.regist_form {
+    max-width: 800px;
+    margin: 0px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+
+.regist_form > div {
+    padding: 20px;
+}
+
+
+.Admin-info-heading {
+    padding: 5px;
+    color: aliceblue;
+    background-color: blue;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.details > div {
+    margin: 5px;
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.security-title {
+    margin-top: 25px;
+    padding: 24px;
+    color: aliceblue;
+    background-color: #0000ff;
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+    margin-left: -20px;
+    width: 753px;
+}
+
+.checkboxes {
+    margin-bottom: 10px;
+    border: 1px solid rgb(205, 203, 203);
+    padding: 10px;
+}
+
+.checkboxes > h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+input[type="text"],
+input[type="date"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="text"]::placeholder,
+input[type="file"]::placeholder{
+    color: #999;
+}
+
+input[type="text"]:focus,
+input[type="file"]:focus,
+input[type="password"]:focus,
+select:focus {
+    outline: none;
+    border-width: 2px;
+    border-color: #007bff;
+}
+
+button {
+    background-color: #0000ff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.formerror {
+    color: Red;
+    font-weight: 600;
+    font-size: small;
+}
