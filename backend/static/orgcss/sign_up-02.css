@@ -106,3 +106,9 @@ button:hover {
     font-size: 20px;
     font-weight: 600;
 }
+
+.formerror {
+    color: Red;
+    font-weight: 600;
+    font-size: small;
+}

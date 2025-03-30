@@ -92,3 +92,18 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+.formerror {
+    color: Red;
+    font-weight: 600;
+    font-size: small;
+}
+
+.org-email input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}

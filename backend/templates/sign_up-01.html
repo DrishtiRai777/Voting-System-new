@@ -1,3 +1,4 @@
+<!-- filepath: c:\Users\HP\Desktop\Project\backend\templates\sign_up-01.html -->
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'orgcss/sign_up-01.css' %}">
 </head>
+
 <body>
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {% endfor %}
+    {% endif %}
     <!-- Organization Details -->
     <header>
         <div>
@@ -22,78 +32,59 @@
         <div class="org-info-heading">
             <p>Organization Information</p>
         </div>
-
+       
         <div>
-            <form action="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post" >
+            <form name="myForm" class='OrganizationForm' onsubmit="return validateForm()" method="post">
+                {% csrf_token %}
+                
                 <div class="details">
-                    <div>
-                        <!-- Organization Name -->
-                        <label for="orgName">Organization Name: </label>
-                        <input type="text" name="orgName" id="orgName" required> 
-                        <b><span class="formerror"> </span></b>
+                    <div class="formdesign" id="orgNameError">
+                        <!--Organization Name-->
+                        {{ form.organization_name.label_tag }} {{ form.organization_name }} 
+                        <b><span class="formerror"></span></b>
                     </div>
     
-    
-                    <div>
-                        <!-- Organization Type -->
-                        <label for="organizationType">Organization Type:</label>
-                        <select id="organizationType" name="organizationType">
-                            <option value="StudentClub">Student Club</option>
-                            <option value="AcademicDepartment">Academic Department</option>
-                            <option value="AdministrativeOffice">Administrative Office</option>
-                            <option value="FacultySenate">Faculty Senate</option>
-                        </select>
-                    </div>
-    
-                </div>
-
-                <div class="details">
-                    <div>
-                        <!-- Organization Address -->
-                        <label for="orgType">Organization Address: </label>
-                        <input type="text" name="orgType" id="orgType" required>
-                        <b><span class="formerror"> </span></b>
-                    </div>
-    
-                    <div>
-                        <!-- Organization Contact Person -->
-                        <label for="orgType">Organization Contact Person: </label>
-                        <input type="text" name="orgType" id="orgType" required>
-                        <b><span class="formerror"> </span></b>
+                    <div class="formdesign" id="organizationTypeError">
+                        <!-- Organization Type--> 
+                        {{ form.type.label_tag }} 
+                        {{ form.type }} 
+                        <b><span class="formerror"></span></b>
                     </div>
                 </div>
 
                 <div class="details">
-                    <div>
-                        <!-- Organization Email -->
-                        <label for="orgType">Organization Email: </label>
-                        <input type="text" name="orgType" id="orgType" required>
-                        <b><span class="formerror"> </span></b>
+                    <div class="formdesign" id="orgAddressError">
+                        <!-- Organization Address-->
+                        {{ form.address.label_tag }} {{ form.address }}
+                        <b><span class="formerror"></span></b>
                     </div>
-                   
-                    <div>
-                        <!-- Organization Logo -->
-                        <label for="organizationLogo">Organization Logo:</label>
-                        <input type="file" id="organizationLogo" name="organizationLogo" accept="image/*">
+    
+                    <div class="formdesign" id="orgContactPersonError">
+                        <!-- Organization Contact Person--> 
+                        {{ form.contact_person_name.label_tag }} {{ form.contact_person_name }}
+                        <b><span class="formerror"></span></b>
                     </div>
                 </div>
 
-                <div>
-                    <!-- Social Media Handle -->
-                    <label for="socialMediaLinks">LinkedIn:</label>
-                    <input type="text" id="facebookLink" name="facebookLink" placeholder="LinkedIn URL">
+                <div class="details">
+                    <div class="formdesign org-email" id="orgEmailError">
+                        <!-- Organization Email--> 
+                        {{ form.email_address.label_tag }} {{ form.email_address }}
+                        <b><span class="formerror"></span></b>
+                    </div>
+                </div>
+
+                <div class="formdesign" id="linkedinError">
+                    <!-- Social Media Handle--> 
+                    {{ form.linkedin_id.label_tag }} {{ form.linkedin_id }}
+                    <b><span class="formerror"></span></b>
                 </div>
                 <br>
-                <button type="button" id="nextButton"><a href='/sign_up02'>Next</a></button>
+                <button class="submit" type="submit" id="submitButton">Next</button>
             </form>
         </div>
     </div>
 
-    <script>
-        document.getElementById('nextButton').addEventListener('click', function() {
-            window.location.href = 'sign_up-02';
-        });
-    </script>
-   
+    <script src="{% static 'orgjs/sign_up-01.js' %}"></script>
 </body>
 </html>
